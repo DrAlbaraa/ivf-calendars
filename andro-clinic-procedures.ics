@@ -1,0 +1,74 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Andrology Procedure Schedule//Andro Clinic//EN
+METHOD:PUBLISH
+X-WR-CALNAME:Andro Clinic – Procedure Schedule
+X-WR-CALDESC:TESE\, SA\, Sperm Freezing\, DFI – Andro Clinic
+X-WR-TIMEZONE:Asia/Riyadh
+
+BEGIN:VEVENT
+SUMMARY:🔬 TESE – [Patient Name]
+DTSTART:20260625T060000Z
+DTEND:20260625T080000Z
+DTSTAMP:20260623T000000Z
+UID:tese-001@androclinic
+DESCRIPTION:PROCEDURE: Testicular Sperm Extraction (TESE)\n\nPATIENT: [Patient Name]\nCLINIC: Andro Clinic\n\nNOTES:\n- Patient NPO from midnight\n- Confirm anaesthesia/sedation booking\n- Coordinate with embryology lab – lab on standby for sperm search\n- Confirm ICSI cycle scheduled same day or sperm freezing required\n- Type: [Conventional TESE / Micro-TESE]\n- Indication: [NOA / OA / Other]
+LOCATION:Surgical Theatre – Andro Clinic
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ TESE in 60 min – [Patient Name]. Confirm surgical & lab readiness.
+TRIGGER:-PT60M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ TESE in 15 min – [Patient Name]. Embryology lab ready for tissue receival.
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🧫 SA – [Patient Name]
+DTSTART:20260625T070000Z
+DTEND:20260625T083000Z
+DTSTAMP:20260623T000000Z
+UID:sa-001@androclinic
+DESCRIPTION:PROCEDURE: Semen Analysis (SA)\n\nPATIENT: [Patient Name]\nCLINIC: Andro Clinic\n\nNOTES:\n- Abstinence period: 2–5 days confirmed
+LOCATION:Andrology Lab – Andro Clinic
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ SA in 30 min – [Patient Name]. Lab ready for sample processing.
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🧬 Sperm Freezing – [Patient Name]
+DTSTART:20260627T073000Z
+DTEND:20260627T083000Z
+DTSTAMP:20260623T000000Z
+UID:freeze-001@androclinic
+DESCRIPTION:PROCEDURE: Sperm Cryopreservation\n\nPATIENT: [Patient Name]\nCLINIC: Andro Clinic\n\nNOTES:\n- Abstinence period: 2–5 days confirmed\n- Reason for freezing: [Pre-chemo / Pre-surgery / Elective / Backup for ART cycle]\n- Number of straws: [TO RECORD]\n- Consent for cryostorage signed: [YES / NO]
+LOCATION:Andrology Lab – Andro Clinic
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ Sperm Freezing in 30 min – [Patient Name]. Confirm cryostorage prep & labelling.
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🧪 DFI Test – [Patient Name]
+DTSTART:20260629T073000Z
+DTEND:20260629T083000Z
+DTSTAMP:20260623T000000Z
+UID:dfi-001@androclinic
+DESCRIPTION:PROCEDURE: DNA Fragmentation Index (DFI) Test\n\nPATIENT: [Patient Name]\nCLINIC: Andro Clinic\n\nNOTES:\n- Abstinence period: 2–5 days confirmed
+LOCATION:Andrology Lab – Andro Clinic
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ DFI Test in 30 min – [Patient Name]. Lab ready for sample receival.
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+
+END:VCALENDAR

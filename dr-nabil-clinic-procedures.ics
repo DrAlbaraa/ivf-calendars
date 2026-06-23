@@ -1,0 +1,109 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//IVF Procedure Schedule//Dr. Nabil Clinic//EN
+METHOD:PUBLISH
+X-WR-CALNAME:Dr. Nabil Clinic – Procedure Schedule
+X-WR-CALDESC:OPU\, ET\, FET\, Biopsy\, and IUI procedures – Dr. Nabil Clinic
+X-WR-TIMEZONE:Asia/Riyadh
+
+BEGIN:VEVENT
+SUMMARY:🥚 OPU – [Patient Name]
+DTSTART:20260625T063000Z
+DTEND:20260625T083000Z
+DTSTAMP:20260623T000000Z
+UID:opu-001-nabil@drnabilclinic
+DESCRIPTION:PROCEDURE: Ovum Pick Up (OPU)\n\nPATIENT: [Patient Name]\nDOCTOR: Dr. Nabil\nCLINIC: Dr. Nabil Clinic\n\nNOTES:\n- Patient NPO from midnight\n- Confirm anaesthesia booking\n- Prepare follicle flush media\n- Lab on standby for oocyte receival\n- Trigger time: [ENTER TIME]
+LOCATION:OPU Theatre – Dr. Nabil Clinic
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ OPU in 60 min – [Patient Name]. Confirm lab & theatre readiness.
+TRIGGER:-PT60M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ OPU in 15 min – [Patient Name]. Lab team to OPU theatre now.
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🌱 ET – [Patient Name] (Day [X])
+DTSTART:20260630T080000Z
+DTEND:20260630T090000Z
+DTSTAMP:20260623T000000Z
+UID:et-001-nabil@drnabilclinic
+DESCRIPTION:PROCEDURE: Embryo Transfer (ET)\n\nPATIENT: [Patient Name]\nDOCTOR: Dr. Nabil\nCLINIC: Dr. Nabil Clinic\n\nNOTES:\n- Patient to arrive with full bladder\n- Confirm embryo selection with embryologist\n- Prepare transfer catheter & ultrasound\n- Luteal support prescription confirmed\n- Transfer day: [Day 3 / Day 5]\n- Number of embryos: [TO CONFIRM]
+LOCATION:ET Suite – Dr. Nabil Clinic
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ ET in 60 min – [Patient Name]. Embryo selection & lab prep required.
+TRIGGER:-PT60M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ ET in 15 min – [Patient Name]. Load embryo & prep transfer suite now.
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:❄️ FET – [Patient Name] (Day [X])
+DTSTART:20260705T080000Z
+DTEND:20260705T090000Z
+DTSTAMP:20260623T000000Z
+UID:fet-001-nabil@drnabilclinic
+DESCRIPTION:PROCEDURE: Frozen Embryo Transfer (FET)\n\nPATIENT: [Patient Name]\nDOCTOR: Dr. Nabil\nCLINIC: Dr. Nabil Clinic\n\nNOTES:\n- Embryo(s) for thaw: [ENTER EMBRYO ID]\n- Number of embryos: [TO CONFIRM]
+LOCATION:ET Suite – Dr. Nabil Clinic
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ FET in 60 min – [Patient Name]. Begin embryo warming protocol.
+TRIGGER:-PT60M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ FET in 15 min – [Patient Name]. Confirm embryo survival & prep suite.
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🔬 Biopsy – [Patient Name]
+DTSTART:20260708T073000Z
+DTEND:20260708T083000Z
+DTSTAMP:20260623T000000Z
+UID:biopsy-001-nabil@drnabilclinic
+DESCRIPTION:PROCEDURE: Embryo Biopsy\n\nPATIENT: [Patient Name]\nDOCTOR: Dr. Nabil\nCLINIC: Dr. Nabil Clinic\n\nBIOPSY TYPE: [Embryo Biopsy – PGT]\nGender Selection Male / Female\n\nNOTES:\n- Confirm biopsy day and embryo stage if PGT\n- Arrange sample shipping to genetics lab\n- Labelling and consent forms to be completed beforehand\n- Results expected: [DATE]
+LOCATION:Procedure Room – Dr. Nabil Clinic
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ Biopsy in 60 min – [Patient Name]. Confirm biopsy type & prep.
+TRIGGER:-PT60M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ Biopsy in 15 min – [Patient Name]. Confirm consent & labelling ready.
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:💉 IUI – [Patient Name]
+DTSTART:20260710T080000Z
+DTEND:20260710T090000Z
+DTSTAMP:20260623T000000Z
+UID:iui-001-nabil@drnabilclinic
+DESCRIPTION:PROCEDURE: Intrauterine Insemination (IUI)\n\nPATIENT: [Patient Name]\nDOCTOR: Dr. Nabil\nCLINIC: Dr. Nabil Clinic\n\nNOTES:\n- Confirm ovulation trigger time and IUI timing (36–40 hrs post-trigger)
+LOCATION:Procedure Room – Dr. Nabil Clinic
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ IUI in 60 min – [Patient Name]. Confirm sperm sample & prep.
+TRIGGER:-PT60M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ IUI in 15 min – [Patient Name]. Sperm wash should be complete now.
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+
+END:VCALENDAR
